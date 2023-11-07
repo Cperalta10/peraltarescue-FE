@@ -1,0 +1,56 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    background-image: url(./data/catbanner2.jpg);
+}
+
+.logoName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: grey;
+    opacity: 80%;
+    border-radius: 10px;
+    color: white;
+    padding: 0 3rem 0 3rem;
+}
+
+.logoName h1 {
+    font-size: 3rem;
+}
+
+nav {
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    background-color: grey;
+    opacity: 80%;
+}
+
+.navLink {
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.titleLink {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.navLink:hover {
+    background-color: #555;
+}
+
+.navLink:active {
+    background-color: black;
+}
+
+/* .navLink:visited {
+    background-color: #ccc;
+} */

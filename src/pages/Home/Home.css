@@ -1,0 +1,24 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.topHome h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.est {
+    font-style: italic;
+}

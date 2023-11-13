@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Adoption = () => {
-  return (
-    <div>Adoption</div>
-  )
-}
+  return <div>Adoption</div>;
+};
 
 export default Adoption;

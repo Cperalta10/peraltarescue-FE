@@ -1,24 +1,144 @@
 .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.topHome {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    padding: 2rem;
+.catList {
+  max-width: 1200px;
+  width: 100%;
+  aspect-ratio: 10 / 6;
+  margin: 2rem auto;
 }
 
-.topHome h2 {
-    font-size: 2rem;
-    font-weight: bold;
+.catInfo {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  background-color: grey;
+  opacity: 80%;
+}
+
+.catInfo h2 {
+  font-size: 2rem;
+}
+
+.imgSlider {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  flex-shrink: 0;
+  flex-grow: 0;
+  transition: translate 300ms ease-in-out;
+}
+
+.imageSliderBtn {
+  all: unset;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 100ms ease-in-out;
+}
+
+.imageSliderBtn:hover,
+.imageSliderBtn:focus-visible {
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.imageSliderBtn:hover > *,
+.imageSliderBtn:focus-visible > * {
+  animation: squish 200ms ease-in-out;
+}
+
+.imageSliderBtn > * {
+  stroke: white;
+  fill: black;
+  width: 2rem;
+  height: 2rem;
+}
+
+.imgSlideDotBtn {
+  all: unset;
+  display: block;
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  transition: scale 100ms ease-in-out;
+}
+
+.imgSlideDotBtn:hover,
+.imgSlideDotBtn:focus-visible {
+  scale: 1.2;
+}
+
+.imgSlideDotBtn > * {
+  stroke: white;
+  fill: black;
+  height: 100%;
+  width: 100%;
+}
+
+.imgSlideDotBtn:focus-visible,
+.imageSliderBtn:focus-visible {
+  outline: auto;
+}
+
+@keyframes squish {
+  50% {
+    scale: 1.4 0.6;
+  }
+}
+
+.botHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.botHome h2 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .est {
-    font-style: italic;
+  font-style: italic;
+}
+
+.missionSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 8rem;
+  gap: 3rem;
+}
+
+.missionSection div {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.missionSection div h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.donate {
+  margin-bottom: 2rem;
 }

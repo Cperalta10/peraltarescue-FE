@@ -3,6 +3,7 @@ import "./Home.css";
 import Sadcat from "../../data/img/sadcat.jpg";
 import { catList } from "../../data/CatsList";
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -52,6 +53,9 @@ const Home = () => {
             <p>{catList[imageIndex].age}</p>
             <p>{catList[imageIndex].gender}</p>
             <p>{catList[imageIndex].breed}</p>
+            <Link to="adoption" className="catLink">
+              Learn more about {catList[imageIndex].catName}...
+            </Link>
           </div>
           <button
             onClick={showPrevImage}
@@ -97,7 +101,28 @@ const Home = () => {
         </section>
       </div>
 
-      <div className="missionSection">
+      <div className="adoptingSec">
+        <div>
+          <h2>Adopt a Cat</h2>
+          <p>
+            All cats at the Peralta's Cat Rescue are rescue cats. We make sure
+            that all of our cats are vaccinated, michrochipped, and
+            spayed/neutered. If you are interested in adopting one of our cats,
+            please fill out the Adoption Application. We will call you once we
+            recive the form.
+          </p>
+          <Link to="/adoptionform" className="generalBtn">
+            Adoption Form
+          </Link>
+        </div>
+        <img
+          src="https://di-uploads-pod11.dealerinspire.com/marinochryslerjeepdodgeram/uploads/2019/05/adopt-a-cat-banner.jpg"
+          height="400px"
+          alt="sad cat in cage"
+        />
+      </div>
+
+      <div className="postSection">
         <img src={Sadcat} height="400px" alt="sad cat in cage" />
         <div>
           <h2>Our Mission</h2>
@@ -115,44 +140,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="botHome">
-        <h2>Peralta's Cat Rescue</h2>
-        <p className="est">Est. October, 2023</p>
-        <p>Non-profit organization</p>
-        {/* <p>Rescue for cats</p> */}
-        <p>Ontario, California</p>
-      </div>
-
-      <div className="donate">
-        <form
-          action="https://www.paypal.com/donate"
-          method="post"
-          target="_top"
-        >
-          <input type="hidden" name="business" value="2BQN73RCV43XL" />
-          <input type="hidden" name="no_recurring" value="0" />
-          <input
-            type="hidden"
-            name="item_name"
-            value="Please do not donate. This website was created for my resume."
-          />
-          <input type="hidden" name="currency_code" value="USD" />
-          <input
-            type="image"
-            src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-            border="0"
-            name="submit"
-            title="PayPal - The safer, easier way to pay online!"
-            alt="Donate with PayPal button"
-          />
-          <img
-            alt=""
-            border="0"
-            src="https://www.paypal.com/en_US/i/scr/pixel.gif"
-            width="1"
-            height="1"
-          />
-        </form>
+      <div className="divider">
+        <div className="top"></div>
+        <div className="bottom"></div>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@
   max-width: 1200px;
   width: 100%;
   aspect-ratio: 10 / 6;
-  margin: 2rem auto;
+  margin: 4rem auto;
 }
 
 .catInfo {
@@ -23,10 +23,16 @@
   border-radius: 10px;
   background-color: grey;
   opacity: 80%;
+  gap: 0.1rem;
 }
 
 .catInfo h2 {
   font-size: 2rem;
+  font-weight: bold;
+}
+
+.catLink {
+  color: white;
 }
 
 .imgSlider {
@@ -62,7 +68,7 @@
 
 .imageSliderBtn > * {
   stroke: white;
-  fill: black;
+  fill: grey;
   width: 2rem;
   height: 2rem;
 }
@@ -83,7 +89,7 @@
 
 .imgSlideDotBtn > * {
   stroke: white;
-  fill: black;
+  fill: grey;
   height: 100%;
   width: 100%;
 }
@@ -106,6 +112,12 @@
   align-items: center;
   font-size: 1.5rem;
   padding: 2rem;
+  /* clip-path: polygon(0 0, 50% 50px, 100% 0, 100% 100%, 0 100%);
+  margin-top: -40px; */
+  background-color: grey;
+  width: 100%;
+  color: white;
+  gap: 0.5rem;
 }
 
 .botHome h2 {
@@ -117,15 +129,16 @@
   font-style: italic;
 }
 
-.missionSection {
+.postSection {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem 8rem;
+  margin: 4rem 8rem;
   gap: 3rem;
+  padding: 5rem;
 }
 
-.missionSection div {
+.postSection div {
   font-size: 2rem;
   display: flex;
   flex-direction: column;
@@ -134,11 +147,60 @@
   gap: 1.5rem;
 }
 
-.missionSection div h2 {
+.postSection div h2 {
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-.donate {
-  margin-bottom: 2rem;
+.generalBtn {
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: grey;
+  border-radius: 10px;
+  opacity: 80%;
+  border: none;
+  font-size: 1rem;
+}
+
+.generalBtn:hover {
+  background-color: #555;
+}
+
+.generalBtn:active {
+  background-color: black;
+}
+
+.adoptingSec {
+  background: linear-gradient(to right, grey, orange, skyblue);
+  --mask: radial-gradient(49.31px at 50% 67.5px, #000 99%, #0000 101%)
+      calc(50% - 50px) 0/100px 51% repeat-x,
+    radial-gradient(49.31px at 50% -42.5px, #0000 99%, #000 101%) 50% 25px/100px
+      calc(51% - 25px) repeat-x,
+    radial-gradient(49.31px at 50% calc(100% - 67.5px), #000 99%, #0000 101%)
+      calc(50% - 50px) 100%/100px 51% repeat-x,
+    radial-gradient(49.31px at 50% calc(100% + 42.5px), #0000 99%, #000 101%)
+      50% calc(100% - 25px) / 100px calc(51% - 25px) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.adoptingSec div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  gap: 1.5rem;
+}
+
+.adoptingSec h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
 }

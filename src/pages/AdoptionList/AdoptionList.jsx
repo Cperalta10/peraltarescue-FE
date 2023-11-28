@@ -24,7 +24,7 @@ const Adoption = () => {
                 </p>
                 <Link
                   to="/adoptionform"
-                  state={{ catName: cat.catName }}
+                  // state={{ catName: cat.catName }}
                   className="generalBtn"
                 >
                   Adopt {`${cat.catName}`}

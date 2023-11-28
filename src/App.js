@@ -2,7 +2,7 @@ import { Route, Routes, Link } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home/Home";
 import AdoptionList from "./pages/AdoptionList/AdoptionList";
-import AdoptionForm from "./pages/AdoptionForm";
+import AdoptionForm from "./pages/AdoptionForm/AdoptionForm";
 import ContactForm from "./pages/ContactForm";
 import Logo from "./data/img/PRlogo.png";
 

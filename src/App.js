@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import AdoptionList from "./pages/AdoptionList/AdoptionList";
 import AdoptionForm from "./pages/AdoptionForm/AdoptionForm";
-import ContactForm from "./pages/ContactForm";
+import ContactForm from "./pages/ContactForm/ContactForm";
 import Logo from "./data/img/PRlogo.png";
 
 function App() {

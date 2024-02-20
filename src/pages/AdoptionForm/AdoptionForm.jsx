@@ -15,8 +15,8 @@ const AdoptionForm = () => {
     city: "",
     state: "",
     zipCode: "",
-    allergies: "",
-    asthma: "",
+    expenses: "",
+    cleanHouse: "",
     catCare: "",
   });
 
@@ -139,10 +139,10 @@ const AdoptionForm = () => {
         </label>
 
         <label>
-          Do you or anyone else in your house have allergies?
+          Are you prepared to care for this cat for 15–20 years?
           <select
-            name="allergies"
-            value={formData.allergies}
+            name="catCare"
+            value={formData.catCare}
             onChange={handleChange}
           >
             <option value="Yes">Yes</option>
@@ -151,18 +151,23 @@ const AdoptionForm = () => {
         </label>
 
         <label>
-          Do you or anyone else in your house have asthma?
-          <select name="asthma" value={formData.asthma} onChange={handleChange}>
+          Are you prepared to spend $$$ on food, litter, and vet bills? and
+          toys!
+          <select
+            name="expenses"
+            value={formData.expenses}
+            onChange={handleChange}
+          >
             <option value="Yes">Yes</option>
             <option value="No">No</option>
           </select>
         </label>
 
         <label>
-          Are you prepared to care for this cat for 15–20 years?
+          Are you prepared to cat proof your home to help protect this cat?
           <select
-            name="catCare"
-            value={formData.catCare}
+            name="cleanHouse"
+            value={formData.asthma}
             onChange={handleChange}
           >
             <option value="Yes">Yes</option>
